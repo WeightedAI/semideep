@@ -61,7 +61,7 @@ jobs:
       run: |
         twine check dist/*
     - name: Store build artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v2
       with:
         name: dist
         path: dist/
@@ -77,7 +77,7 @@ jobs:
       with:
         python-version: '3.9'
     - name: Download build artifacts
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v2
       with:
         name: dist
         path: dist/
@@ -85,5 +85,5 @@ jobs:
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
         user: __token__
-        password: ${{ secrets.PYPI_API_TOKEN }}
+        password: ${{ secrets.PYPI_PASSWORD || secrets.PYPI_API_TOKEN }}
         skip_existing: true
