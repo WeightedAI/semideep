@@ -187,13 +187,13 @@ trainer = WeightedTrainer(
     X_train=X_train,
     y_train=y_train,
     X_test=X_test,
-    weights="distance",  # Options: "distance", "idw", None, or numpy array
+    weights="distance", 
     distance_metric="euclidean",
     lambda_=0.8,
     learning_rate=0.001,
     batch_size=32,
     epochs=100,
-    device="cuda"  # Use GPU if available
+    device="cuda"
 )
 
 # Train and evaluate
@@ -357,8 +357,8 @@ If you use SemiDeep in your research, please cite:
 ```bibtex
 @inproceedings{abedinia2025enhancing,
   title={Enhancing Classification with Semi-Supervised Deep Learning Using Distance-Based Sample Weights},
-  author={Abedinia, Aydin},
-  booktitle={International Conference on Machine Learning and Technologies (ICMLT)},
+  author={Abedinia, Aydin, Tabakhi, Shima, Seydi, Vahid},
+  booktitle={https://doi.org/10.48550/arXiv.2505.14345},
   year={2025}
 }
 ```
