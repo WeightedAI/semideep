@@ -18,7 +18,7 @@ setup(
     description="Distance-based weighting for semi-supervised deep learning",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/aydin/semideep",
+    url="https://github.com/weightedAI/semideep",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
