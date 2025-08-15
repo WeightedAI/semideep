@@ -64,7 +64,7 @@ where Loss is typically cross-entropy for classification tasks.
 ### Install from source
 
 ```bash
-git clone https://github.com/aydinabedinia/SemiDeep.git
+git clone https://github.com/WeightedAI/SemiDeep.git
 cd SemiDeep
 pip install -e .
 ```
